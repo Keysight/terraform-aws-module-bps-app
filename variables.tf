@@ -1,5 +1,5 @@
 variable "AmiName" {
-	default = "Ixia_BreakingPoint_Virtual_Controller_26.1.20.1-prod-etszhwtguwj7m"
+	default = "Ixia_BreakingPoint_Virtual_Controller_26.6.21.2-prod-etszhwtguwj7m"
 	description = "AMI name used for deploying instances"
 	type = string
 }
@@ -90,7 +90,7 @@ variable "UserProjectTag" {
 }
 
 variable "Version" {
-	default = "26.1.0"
+	default = "26.6.0"
 	description = "Versioning of the application using the deployment"
 	type = string
 }
@@ -98,9 +98,7 @@ variable "Version" {
 variable "init_cli" {
 	default = <<-EOF
 #!/bin/bash -xe
-yum install -y https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm
 systemctl status amazon-ssm-agent
-BLADE_IPS=(10.0.10.11)
     EOF
 	type = string
 }
