@@ -1,5 +1,5 @@
 variable "AmiName" {
-	default = "Ixia_BreakingPoint_Virtual_Controller_26.6.21.2-prod-etszhwtguwj7m"
+	default = "Ixia_BreakingPoint_Virtual_Controller_26.6.21.6-copied-to-us-east-1-20261103-203427-prod-etszhwtguwj7m"
 	description = "AMI name used for deploying instances"
 	type = string
 }
